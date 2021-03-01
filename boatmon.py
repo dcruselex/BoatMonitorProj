@@ -37,5 +37,7 @@ while True:
         cprint("Spacebar...", "red")
 
         
-    elif k==13 or k== ord("N") or k == ord("n"): # carriage return. Next class
-        cprint("Next", "red")
+    elif k==13 or k== ord("N") or k =
+    
+    = ord("n"): # carriage return. Next class
+        cprint("Next", "orange")
