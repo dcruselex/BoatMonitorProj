@@ -6,6 +6,9 @@ import time
 import glob
 from termcolor import colored, cprint
 
+def ftoc(f):
+    return f*2  # go get the right equation for farinheight to celsius
+
 
 def printHeader():
     print()
@@ -32,6 +35,8 @@ def prompt():
 
 
 #-----------------------main--------------------------
+print("test", ftoc(25))
+mode="e"  # e for englixh, m for metric
 os.system('color') # needed for termcolor to work on Windows
 printHeader()
 quitnow = False
@@ -53,4 +58,11 @@ while True:
             time.sleep(0.2)
             print('.', end='', flush=True)
         print()
+    
+    elif k=="M" or k == "m": # switch modes
+        if mode=="e":
+             mode="m"
+        else:
+            mode="e"
+        print("mode:", mode)
         
