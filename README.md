@@ -9,6 +9,8 @@ In additon, I will use an older tablet and small keyboard as the interface which
 
 This project will include using Raspberry Pi 3, breadboard, etc..
 
-This will include initially moisture and temperature
+This will include initially power, voltage, water and temperature
+
+Will add..d.d.d.d
 
 
