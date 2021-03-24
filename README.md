@@ -26,8 +26,9 @@ Phase I:
 3.	The following are the specific and special instructions required for the reviewed and testers to run the program.
 
 3.1 The user will need to run the program using Python3.
-
-3.2
+	Note:  Before running program you will need to "pip install termcolor"
+    Note:  > python3 boatmon.py
+3.2 
 
 3.3
 
