@@ -60,7 +60,7 @@ def printdate():
 
 
 #-----------------------main--------------------------
-mode="e"  # e for englixh, m for metric
+mode="e"  # e for english, m for metric
 #os.system('color') # needed for termcolor to work on Windows
 printHeader()
 quitnow = False
