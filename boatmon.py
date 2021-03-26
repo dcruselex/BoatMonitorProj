@@ -6,6 +6,7 @@ import time
 import glob
 from termcolor import colored, cprint
 import datetime
+import TempSensor
 
 def ftoc(fahrenheit):
     celsius = ( fahrenheit- 32) * 5.0/9.0
@@ -50,11 +51,13 @@ def getVoltage():
 
 def prompt():
     green = "green"
-    print("({})uit, ({})can ({})eboot .".format(colored("Q", green), colored("S", green), colored("R", green)))
+    print("({})uit, ({})can ({})eboot ({})ode .".format(colored("Q", green), colored("S", green), colored("R", green), colored("M", green)))
 
 def printdate():
     now = datetime.datetime.now()
     return (str(now)) 
+
+
 
 #-----------------------main--------------------------
 mode="e"  # e for englixh, m for metric
@@ -72,7 +75,9 @@ while True:
     
     elif k == "S" or k == "s":  # SPACE bar pressed, capture two images regular/mirror
         cprint("Scanning...", "white")
-        cprint("{} Power:{}   Voltage:{}   Water:{}".format (printdate(), getPower(), getVoltage(), getWater()), "green")
+        ts = TempSensor.TempSensor()
+        temp = ts.getTemp (mode)
+        cprint("{} Power:{}   Voltage:{}   Water:{} Temp:{}".format (printdate(), getPower(), getVoltage(), getWater(), temp), "green")
 
     elif k=="R" or k == "r": # carriage return. Next class
         cprint("Rebooting system...", "red")
@@ -83,10 +88,11 @@ while True:
     
     elif k=="M" or k == "m": # switch modes english to metric
         if mode=="e":
-             mode="m"
+            mode="m"
+            print("mode:", "Metric")
         else:
             mode="e"
-        print("mode:", mode)
+            print("mode:", "English")
         
 
     elif k=="F" or k == "c": # switch modes fahrenheit to celsius
