@@ -22,7 +22,7 @@ Phase I:
 
 2.3. Feature:  Implemented a “master loop” console application where the user can repeatedly enter command/perform actions, including to exit the program.
 
-2.4. Feature:  Created a class, then created at least one object of that class and populated it with data.   The value of at least object must be used somewhere in your code.
+2.4. Feature:  Created a class, then created at least one object of that class and populated it with data.   The value of at least one object must be used somewhere in your code.
 
 2.5. Feature:  Created and called at least 3 functions or methods, at least one of which must return a value that is used somewhere else in our code.   To clarify, at least one function should be called in your code, that function should calculate, retrieve, or otherwise set the value of a variable or data structure, return a value to where it was called, and use that value somewhere else in your code.  
 
@@ -38,3 +38,4 @@ Phase I:
 (S) = Scan: This will run the program
 (R) = Reboot:  This will reboot and rerun the program
 (M) = Mode:  This will change mode, default mode is English, changing mode will put it in metric mode and change the temperature to Celsius.  Changing mode again will put it back in English mode. 
+Note:  Since I had to simulate the input
