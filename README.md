@@ -29,13 +29,24 @@ Phase I:
 2.6. Feature: Build a conversion tool that converts user input to another type and displays it.   Note:  English to Metric conversion tool on temperature.
 
 3.  The following are the specific and special instructions required for the reviewed and testers to run the program.
+
 3.1 The user will need to run the program using Python3.
     Before running program, you will need to "pip install termcolor"
+
 3.2 The user will need to run the program using Python3.
     Note:  > python3 boatmon.py
+
 3.3 The user will have the following choices:
+
 (Q) = Quit:  This will quit the program and return you to terminal
+
 (S) = Scan: This will run the program
+
 (R) = Reboot:  This will reboot and rerun the program
+
 (M) = Mode:  This will change mode, default mode is English, changing mode will put it in metric mode and change the temperature to Celsius.  Changing mode again will put it back in English mode. 
-Note:  Since I had to simulate the input
+
+Note:  Since I had to simulate the input, the output will be provided in the following format everytime you scan.
+Date of Scan, Time of Scan, Status of Power- On or Off, Voltage , Water- High or Low, Temperature-  F or C based on Mode
+
+
